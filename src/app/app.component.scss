@@ -1,0 +1,42 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 500px;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+.paginator {
+  display: flex;
+  justify-content: center;
+}
+
+button:hover {
+  background: #0b7dda;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  margin: auto;
+  border: 1px solid grey;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.search {
+  margin: auto;
+  max-width: 300px;
+  display: flex;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-size: 20px;
+  margin: auto;
+}
