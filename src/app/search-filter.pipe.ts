@@ -5,13 +5,13 @@ import { IData } from './service.service';
   name: 'searchFilter',
 })
 export class SearchFilterPipe implements PipeTransform {
-  transform(value: IData[], args?: any): any {
+  transform(value: any, args?: any): any {
     if (!value) return null;
     if (!args) return value;
 
     args = args.toLowerCase();
 
-    return value.filter((data) => {
+    return value.filter((data: IData) => {
       return JSON.stringify(data).toLowerCase().includes(args);
     });
   }
