@@ -9,6 +9,9 @@
       (input)="search()"
     />
   </div>
+  <div class="paginator">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
   <div class="flex-container">
     <app-figure
       *ngFor="
@@ -22,8 +25,5 @@
     <span *ngIf="!(data | searchFilter: searchTerm).length"
       >No data preset as per search input</span
     >
-  </div>
-  <div class="paginator">
-    <pagination-controls (pageChange)="p = $event"></pagination-controls>
   </div>
 </div>
